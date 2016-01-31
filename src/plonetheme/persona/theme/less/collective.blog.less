@@ -1,0 +1,78 @@
+/*
+ collective.blog
+*/
+.blogItem {
+  margin-bottom: 4.5em;
+
+  h2 {
+    line-height: 1.5em;
+    font-weight: 900;
+    margin-bottom: 2em;
+
+    a {
+      color: @persona-blog-header-color;
+
+      &:hover {
+        color: @persona-blog-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .EntryDescription {
+    font-size: 1.2em;
+  }
+
+  .documentByLine {
+    margin-top: 4em;
+    border-top: 1px solid #ebebeb;
+    clear: both;
+
+    ul.blogByLineInfos {
+      padding: 0;
+
+      li:before {
+        content: " | ";
+      }
+
+      li:first-child:before {
+        content: none;
+      }
+      li {
+        display: inline;
+        background: none !important;
+        color: #777;
+        font-family: "noto serif";
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0px;
+        padding: 0px !important;
+        text-decoration: none;
+        font-weight: normal;
+
+        a {
+          color: #B3B3B1;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .readmore {
+    margin-top: 2em;
+    float: right;
+    list-style: none outside none;
+
+    a {
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: #FFF;
+      border: 1px solid #DDD;
+      border-radius: 15px;
+      font-size: 1.2em;
+    }
+  }
+}

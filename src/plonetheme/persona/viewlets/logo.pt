@@ -1,0 +1,18 @@
+<div id="portal-logo">
+  <div class="cell">
+    <a title="Home"
+       accesskey="1"
+       tal:attributes="href view/navigation_root_url;
+                       title view/navigation_root_title"
+       i18n:domain="plone"
+       i18n:attributes="title">
+        <img src="logo.png" alt=""
+             tal:attributes="alt view/logo_title;
+                             title view/logo_title;
+                             src view/logo_src" /></a>
+  </div>
+</div>
+<div id="headerTitle">
+  <h1 tal:content="view/site_title">Plone site</h1>
+  <p tal:content="view/site_description">Headline</p>
+</div>

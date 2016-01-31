@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records remove="true"
+      prefix="plonetheme.persona"
+      interface="plonetheme.persona.interfaces.IPlonethemePersonaSettings">
+  </records>
+
+  <records remove="true"
+      prefix="plone.resources/barceloneta-mixin-font"
+      interface='Products.CMFPlone.interfaces.IResourceRegistry'></records>
+
+  <records remove="true"
+      prefix="plone.resources/persona-main"
+      interface="Products.CMFPlone.interfaces.IResourceRegistry"></records>
+
+  <records remove="true"
+      prefix="plone.resources/persona"
+      interface="Products.CMFPlone.interfaces.IResourceRegistry"></records>
+
+  <records remove="true"
+      prefix="plone.resources/persona-searchbox"
+      interface="Products.CMFPlone.interfaces.IResourceRegistry"></records>
+
+
+  <!-- bundle definition -->
+  <records remove="true"
+      prefix="plone.bundles/persona-bundle"
+      interface="Products.CMFPlone.interfaces.IBundleRegistry"></records>
+
+</registry>

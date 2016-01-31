@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<metadata>
+  <version>1000</version>
+  <dependencies>
+    <dependency>profile-plone.app.theming:default</dependency>
+    <dependency>profile-plonetheme.barceloneta:registerless</dependency>
+    <dependency>profile-mockup-highlightjs:registerjs</dependency>
+  </dependencies>
+</metadata>

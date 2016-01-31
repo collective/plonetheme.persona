@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<registry>
+
+    <records prefix="plonetheme.persona"
+             interface="plonetheme.persona.interfaces.IPlonethemePersonaSettings">
+      <value key="site_description">I'm plonetheme.persona.site_description in the registry.</value>
+    </records>
+
+    <records prefix="plone.resources/barceloneta-mixin-font"
+              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="css">
+          <element>++theme++barceloneta/less/mixin.font.plone.less</element>
+        </value>
+    </records>
+
+    <records prefix="plone.resources/persona-main"
+              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="css">
+          <element>++theme++persona/less/main.less</element>
+       </value>
+    </records>
+
+    <records prefix="plone.resources/persona-searchbox"
+              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="js">++theme++persona/js/searchbox.js</value>
+    </records>
+
+
+    <records prefix="plone.resources/persona"
+              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+       <value key="js">++theme++persona/js/bundle.js</value>
+       <value key="css">
+          <element>++theme++persona/less/persona.plone.less</element>
+       </value>
+    </records>
+
+    <!-- bundle definition -->
+    <records prefix="plone.bundles/persona-bundle"
+              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+      <value key="resources">
+        <element>persona</element>
+        <element>mockup-bundles-highlightjs</element>
+        <element>mockup-styles-highlightjs-monokai-sublime</element>
+        <element>collective.blog</element>
+      </value>
+      <value key="enabled">True</value>
+      <value key="compile">True</value>
+      <value key="jscompilation">++theme++persona/js/bundle-compiled.js</value>
+      <value key="csscompilation">++theme++persona/css/persona-compiled.css</value>
+      <value key="last_compilation">2016-01-31 00:00:00</value>
+    </records>
+
+</registry>

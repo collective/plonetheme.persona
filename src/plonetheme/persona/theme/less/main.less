@@ -1,0 +1,281 @@
+/**
+/* From Barceloneta
+*/
+//*// Principal box
+.principal {
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, transparent 14%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, transparent 64%, transparent);
+    background-color: darken(@plone-breadcrumb-bg, 5%);
+    background-size: 20px 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding: 50px 0;
+    & .container-fluid {margin: 0 auto; width: 960px;}
+}
+
+.gigantic {
+    h1 { font-size: 500%;}
+    p { font-size: 150%;}
+}
+
+//*// Adjustments
+#content {margin-bottom: @plone-padding-base-horizontal * 4;}
+
+#content-core a {
+  border-bottom: 1px solid @plone-gray-lighter;
+
+  &:hover,
+  &:focus {
+    border-bottom: none;
+  }
+
+  &:focus {
+    .tab-focus(); //--> NOT DONE
+  }
+}
+#content-core .pat-structure a, #content-core .pat-resourceregistry a {
+  border-bottom: none;
+}
+#content-core .pat-structure a.btn, #content-core .pat-resourceregistry  a.btn, #content-core .pat-structure .pagination a {
+  border-bottom: 1px solid @plone-gray-lighter;
+}
+a.plone-toolbar-logo {
+    color: #fff;
+}
+
+//*// Containers
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: @plone-screen-sm-min) { .container {width: @plone-container-sm;}}
+@media (min-width: @plone-screen-md-min) { .container {width: @plone-container-md;}}
+@media (min-width: @plone-screen-lg-min) { .container {width: @plone-container-lg;}}
+
+@media (min-width: @plone-screen-sm-min) { .plone-toolbar-top-default .container {width: @plone-container-sm;}}
+@media(min-width: (@plone-screen-sm-min + @plone-left-toolbar)) { .plone-toolbar-left-default .container {width: (@plone-container-sm);}}
+@media(min-width: (@plone-screen-sm-min + @plone-left-toolbar-expanded)) {.plone-toolbar-left-expanded .container {width: (@plone-container-sm);}}
+
+@media (min-width: @plone-screen-md-min) {.plone-toolbar-top-default .container {width: @plone-container-md;}}
+@media(min-width: (@plone-screen-md-min + @plone-left-toolbar)) {.plone-toolbar-left-default .container {width: (@plone-container-md);}}
+@media(min-width: (@plone-screen-md-min + @plone-left-toolbar-expanded)) {.plone-toolbar-left-expanded .container {width: (@plone-container-md);}}
+
+@media (min-width: @plone-screen-lg-min) {  .plone-toolbar-top-default .container {width: @plone-container-lg;} }
+@media(min-width: (@plone-screen-lg-min + @plone-left-toolbar)) { .plone-toolbar-left-default .container {width: (@plone-container-lg);}}
+@media(min-width: (@plone-screen-lg-min + @plone-left-toolbar-expanded)) {.plone-toolbar-left-expanded .container {width: (@plone-container-lg);}}
+/**
+ * End Barceloneta
+ */
+
+body {
+  font-family: "Lato",sans-serif;
+}
+
+#main-content-area {
+    float: left;
+    width: 100%;
+}
+
+#left_sidebar_content_area{
+    color: @plone-toolbar-text-color;
+    background: @plone-toolbar-bg;
+
+    float: left;
+    margin-left: -100%;
+    width: 280px;
+}
+
+#expand_content_menu{
+  background: @plone-toolbar-bg;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 4px;
+  z-index:101;
+  -webkit-transition:background .4s;
+  -o-transition:background .4s;
+  -ms-transition:background .4s;
+  -moz-transition:background .4s;
+  transition:background .4s;
+
+  &:hover {
+    background:#38C090;
+  }
+
+  .persona-menu {
+    display: block;
+  }
+
+  .persona-cancel {
+    display: block;
+  }
+}
+
+/**
+ * Pagination
+ */
+.listingBar {
+  text-align: center;
+  overflow: hidden;
+  padding: 4px 0px 94px;
+
+
+  ul {
+    list-style: outside none none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  a {
+    background: @plone-toolbar-bg;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 17px;
+    margin: 2px;
+    min-height: 30px;
+    min-width: 30px;
+    padding: 6px;
+    text-decoration: none;
+    -moz-transition:all .4s;
+    -webkit-transition:all .4s;
+    -ms-transition:all .4s;
+    -o-transition:all .4s;
+    transition:all .4s;
+
+    &.current {
+      background: #B3B3B1 none repeat scroll 0% 0% !important;
+    }
+  }
+
+}
+
+/**
+ * TEMP
+ */
+#mainnavigation-wrapper {
+  display: none;
+}
+
+
+#content-header {
+  margin-top: 1em;
+}
+
+#headerTitle {
+  margin-bottom: 2em;
+  clear: both;
+  text-align: center;
+
+  h1 {
+    margin-top: 0.5em;
+    color: #000000 !important;
+    font-size: 3.5em;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
+#portal-header {
+  text-align: center;
+
+  > .row > .cell {
+    /* Remove paddings since we have no background color. */
+    margin-left: -100%;
+    width: 100%;
+  }
+
+  #portal-logo {
+    float: none !important;
+
+    .cell {
+      border: 1px solid #f3f3f3;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 3px;
+      -webkit-transition:all .4s;
+      -moz-transition:all .4s;
+      transition:all .4s;
+
+      &:hover{
+        opacity:.8;
+      }
+
+      img{
+        border-radius: 50%;
+        display: inline-block;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        width: 120px;
+      }
+    }
+  }
+}
+
+/**
+ * Search
+ */
+#searchbox-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+#portal-searchbox {
+  float: right;
+  min-width: 276px;
+
+  .searchButton {
+    float: right;
+  }
+
+  #searchGadget {
+    float: right;
+    max-width: 230px;
+  }
+}
+
+/**
+ * #main-container a little smaller
+ */
+#main-container {
+  /* @media (min-width: @plone-screen-sm-min) {
+    .make-sm-column-offset(2);
+  } */
+  @media (min-width: @plone-screen-md-min) {
+    .make-md-column-offset(2);
+    width: percentage((8 / @plone-grid-columns));
+  }
+  @media (min-width: @plone-screen-lg-min) {
+    .make-lg-column-offset(1);
+    width: percentage((10 / @plone-grid-columns));
+  }
+}

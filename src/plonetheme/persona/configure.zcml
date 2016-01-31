@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone">
+
+  <include package=".viewlets" />
+
+  <include package="plone.app.theming" />
+  <genericsetup:registerProfile
+      name="default"
+      title="Persona Theme"
+      directory="profiles/default"
+      description='The Persona Theme for Plone 5.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Persona Theme"
+      directory="profiles/uninstall"
+      description="Uninstalls the plonetheme.persona Theme."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!-- Diazo themes -->
+  <plone:static directory="theme" name="persona" type="theme"/>
+
+</configure>

@@ -1,0 +1,38 @@
+#portal-breadcrumbs {
+  width: 100%;
+  background-color: @persona-pathbar-bg-color;
+  margin-bottom: 2em;
+
+
+  .clearfix();
+
+  > span {
+    float: left;
+    > a {
+      display: block;
+      color: @persona-pathbar-text-color;
+      padding: 6px;
+      font-weight: @persona-pathbar-font-weight;
+      font-size: 14px;
+      float: left;
+    }
+    // White separator between pathbar lines
+    &:before:first-child {
+      content: " ";
+      position: absolute;
+      background-color: #fff;
+      left: 0;
+      right: 0;
+      height: 2px;
+      margin-top: -1px;
+    }
+    > .breadcrumbSeparator {
+      display: block;
+      float: left;
+      width: 18px;
+      height: 31px;
+      background-image: url("../images/pathbar_separator.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
