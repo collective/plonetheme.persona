@@ -42,6 +42,7 @@
         <element>mockup-bundles-highlightjs</element>
         <element>mockup-styles-highlightjs-monokai-sublime</element>
         <element>collective.blog</element>
+        <element>mockup-patterns-livesearch</element>
       </value>
       <value key="enabled">True</value>
       <value key="compile">True</value>
