@@ -210,7 +210,7 @@
     .portletContent {
         border-bottom: 0;
         > ul > li > a {display: block;
-            &:before {content: ""; }
+            &:before {content: "" !important; }
             &:hover {background: @plone-portlet-footer-bg;}
             &:hover:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top:-3px; color: @plone-gray-light;}
         }
