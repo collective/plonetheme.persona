@@ -7,16 +7,16 @@ plonetheme.persona
 ==============================================================================
 
 - Port of the clean and well-readable Persona theme to Plone 5.
-- First ported by [@aries1980](https://github.com/aries1980/hugo-theme-persona) to [hugo](https://github.com/spf13/hugo)
-- Then improved by [@pcdummy](https://github.com/pcdummy/hugo-theme-persona) and now ported to Plone 5.
+- First ported by `@aries1980 <https://github.com/aries1980/hugo-theme-persona>`_ to `hugo <https://github.com/spf13/hugo>`_
+- Then improved by `@pcdummy <https://github.com/pcdummy/hugo-theme-persona>`_ and now ported to Plone 5.
 
 It requires the following package:
 
-- [mockup-highlightjs](https://github.com/collective/mockup-highlightjs): A source code highlighter.
+- `mockup-highlightjs <https://github.com/collective/mockup-highlightjs>`_: A source code highlighter.
 
 It supports:
 
-- [collective.blog](https://github.com/collective/collective.blog): A blog addon for Plone 5.
+- `collective.blog <https://github.com/collective/collective.blog>`_: A blog addon for Plone 5.
 
 
 Examples
@@ -24,7 +24,7 @@ Examples
 
 This theme can be seen in action at the following sites:
 
-- My personal blog [rene.jochums.at](http://rene.jochums.at)
+- My personal blog `rene.jochums.at <http://rene.jochums.at>`_.
 
 
 Installation
