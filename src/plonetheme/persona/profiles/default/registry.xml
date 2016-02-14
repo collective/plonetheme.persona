@@ -6,13 +6,6 @@
       <value key="site_description">I'm plonetheme.persona.site_description in the registry.</value>
     </records>
 
-    <records prefix="plone.resources/barceloneta-mixin-font"
-              interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-        <value key="css">
-          <element>++theme++barceloneta/less/mixin.font.plone.less</element>
-        </value>
-    </records>
-
     <records prefix="plone.resources/persona-main"
               interface='Products.CMFPlone.interfaces.IResourceRegistry'>
        <value key="css">
